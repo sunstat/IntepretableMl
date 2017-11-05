@@ -1,5 +1,8 @@
 from AggregateKlines.node import Node
 from AggregateKlines.similarity_pairs import SimilarityPairs
+import numpy as np
+from AggregateKlines.utilities import utils
+
 
 class AggregateKlines(object):
 
@@ -21,15 +24,13 @@ class AggregateKlines(object):
         beta = self._get_coef_helper(cluster.centroid, n_s)
         cluster.update_beta(beta)
 
-
     def _set_all_similarities(self):
         for i in range(len(self.clusters)):
             for j in range(i, len(self.clusters)):
                 cluster1 = self.clusters[i]
                 cluster2 = self.clusters[j]
-
-
-
+                similarity_score = np.norm(cluster1-cluster2)
+                self.similarity_pairs.set_similarity_score(cluster1,cluster2, similarity_score)
 
     def __init__(self, X, Y, k_lin_clf, sample_function, black_box_model, sparse_K):
         '''
@@ -48,8 +49,12 @@ class AggregateKlines(object):
         self.black_box_model = black_box_model
         self.sparse_K = sparse_K
         for i in range(self.clusters):
-            self.set_beta(self.clusters[i], self.k_sparse)
+            self._set_beta(self.clusters[i], self.k_sparse)
+        self._set_all_similarities()
 
+    def aggregate_one_round(self):
+        key_tuple = self.similarity_pairs.find_minimal_pair()
+        
 
     def aggregate(self, cluster1, cluster2, new_beta):
         aggregate_index = cluster1.get_index()
