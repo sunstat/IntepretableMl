@@ -11,6 +11,9 @@ class Node(object):
     def set_centroid(self, centroid):
         self.centroid = centroid
 
+    def update_beta(self, beta):
+        self.beta = beta
+
 if __name__ == "__main__":
 
     '''

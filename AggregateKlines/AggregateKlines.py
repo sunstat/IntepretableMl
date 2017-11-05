@@ -12,6 +12,9 @@ class AggregateKlines(object):
     def _update_centroid(self, cluster):
         self.cluster.set_centroid(self.X(cluster.get_index(), axis=1))
 
+    def get_coef(self, centroid, n_s):
+        
+
     def __init__(self, X, Y, k_lin_clf, sample_function):
         '''
         :param X:
@@ -27,6 +30,7 @@ class AggregateKlines(object):
         self.clusters = self._initialize_clusters(len(X))
         self.similarity_pairs = SimilarityPairs(self.clusters)
 
+
     def aggregate(self, cluster1, cluster2, new_beta):
         aggregate_index = cluster1.get_index()
         aggregate_index.extend(cluster2.get_index())
@@ -35,6 +39,8 @@ class AggregateKlines(object):
         self.clusters.remove(cluster1)
         self.clusters.remove(cluster2)
         self.clusters.append(new_cluster)
+        self.similarity_pairs.remove_cluster(cluster1)
+        self.similarity_pairs.remove_cluster(cluster2)
 
 if __name__ == "__main__":
 

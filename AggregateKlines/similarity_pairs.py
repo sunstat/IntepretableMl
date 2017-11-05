@@ -31,5 +31,18 @@ class SimilarityPairs(object):
     def add_elem(self, key_tuple, value):
         self.similarity_pairs[key_tuple] = value
 
+    def find_minimal_pair(self):
+        minimal_similarity_score = float('inf')
+        final_tuple  = None
+        for tuple, similarity_score in self.similarity_pairs.items():
+            if minimal_similarity_score < similarity_score:
+                minimal_similarity_score = similarity_score
+                final_tuple = tuple
+        return final_tuple
+
+
+
+
+
 
 
