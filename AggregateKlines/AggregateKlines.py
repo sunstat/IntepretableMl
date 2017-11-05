@@ -22,6 +22,12 @@ class AggregateKlines(object):
         cluster.update_beta(beta)
 
 
+    def _set_all_similarities(self):
+        for i in range(len(self.clusters)):
+            for j in range(i, len(self.clusters)):
+                cluster1 = self.clusters[i]
+                cluster2 = self.clusters[j]
+
 
 
 
@@ -41,7 +47,8 @@ class AggregateKlines(object):
         self.similarity_pairs = SimilarityPairs(self.clusters)
         self.black_box_model = black_box_model
         self.sparse_K = sparse_K
-        for i in range()
+        for i in range(self.clusters):
+            self.set_beta(self.clusters[i], self.k_sparse)
 
 
     def aggregate(self, cluster1, cluster2, new_beta):

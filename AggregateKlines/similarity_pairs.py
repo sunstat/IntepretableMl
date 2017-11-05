@@ -40,6 +40,9 @@ class SimilarityPairs(object):
                 final_tuple = tuple
         return final_tuple
 
+    def set_similarity_score(self, cluster1, cluster2, score):
+        self.similarity_pairs[(cluster1, cluster2)] = score
+
 
 
 
