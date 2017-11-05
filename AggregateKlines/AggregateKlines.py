@@ -13,7 +13,7 @@ class AggregateKlines(object):
         self.cluster.set_centroid(self.X(cluster.get_index(), axis=1))
 
     def get_coef(self, centroid, n_s):
-        
+
 
     def __init__(self, X, Y, k_lin_clf, sample_function):
         '''
