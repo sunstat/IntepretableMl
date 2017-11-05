@@ -66,7 +66,7 @@ if __name__ == "__main__":
     simulator.ddt.plot_all_leafs()
 
 
-    '''
+
     import rpy2.robjects as robjects
 
     r = robjects.r
@@ -76,12 +76,14 @@ if __name__ == "__main__":
     r.library("randomForest")
 
     r(
+        '''
         r_f <- function(X,Y) {
         train1.rf <- randomForest(X, factor(Y), localImp=True, importance = TRUE)
         return(list(rf$predicted. rf$localImp))
         }
+        '''
         )
-    '''
+
 
 
 

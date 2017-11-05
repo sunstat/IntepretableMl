@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aaa544af-4bb2-4e61-95e6-5aff59155441" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AggregateKlines/AggregateKlines.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AggregateKlines/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AggregateKlines/node.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simulation/main_simulation.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AggregateKlines/similarity_pairs.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simulation/decisionTree.py" afterPath="$PROJECT_DIR$/simulation/decisionTree.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AggregateKlines/AggregateKlines.py" afterPath="$PROJECT_DIR$/AggregateKlines/AggregateKlines.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AggregateKlines/node.py" afterPath="$PROJECT_DIR$/AggregateKlines/node.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Optimal Classification Tree.ipynb" afterPath="$PROJECT_DIR$/Optimal Classification Tree.ipynb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simulation/simulate_class.py" afterPath="$PROJECT_DIR$/simulation/simulate_class.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +21,8 @@
       <file leaf-file-name="simulate_class.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simulation/simulate_class.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="61" column="33" lean-forward="true" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
+            <state relative-caret-position="431">
+              <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -31,12 +30,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AggregateKlines.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AggregateKlines.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AggregateKlines/AggregateKlines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="84" lean-forward="false" selection-start-line="11" selection-start-column="84" selection-end-line="11" selection-end-column="84" />
-              <folding />
+            <state relative-caret-position="171">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="similarity_pairs.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AggregateKlines/similarity_pairs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="251">
+              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Optimal Classification Tree.ipynb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Optimal Classification Tree.ipynb">
+          <provider selected="true" editor-type-id="ipnb-editor">
+            <state>
+              <selected id="0" />
             </state>
           </provider>
         </entry>
@@ -44,8 +66,8 @@
       <file leaf-file-name="node.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AggregateKlines/node.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="153">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -55,7 +77,7 @@
         <entry file="file://$PROJECT_DIR$/simulation/main_simulation.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -84,8 +106,8 @@
       <file leaf-file-name="decisionTree.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simulation/decisionTree.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="150" column="19" lean-forward="false" selection-start-line="150" selection-start-column="19" selection-end-line="150" selection-end-column="19" />
+            <state relative-caret-position="-587">
+              <caret line="102" column="24" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -119,9 +141,10 @@
         <option value="$PROJECT_DIR$/simulation/node.py" />
         <option value="$PROJECT_DIR$/simulation/main_simulation.py" />
         <option value="$PROJECT_DIR$/simulation/decisionTree.py" />
-        <option value="$PROJECT_DIR$/simulation/simulate_class.py" />
         <option value="$PROJECT_DIR$/AggregateKlines.py" />
         <option value="$PROJECT_DIR$/AggregateKlines/node.py" />
+        <option value="$PROJECT_DIR$/AggregateKlines/similarity_pairs.py" />
+        <option value="$PROJECT_DIR$/simulation/simulate_class.py" />
         <option value="$PROJECT_DIR$/AggregateKlines/AggregateKlines.py" />
       </list>
     </option>
@@ -260,8 +283,8 @@
     <recent_temporary>
       <list size="3">
         <item index="0" class="java.lang.String" itemvalue="Python.node (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.node" />
-        <item index="2" class="java.lang.String" itemvalue="Python.simulate_class" />
+        <item index="1" class="java.lang.String" itemvalue="Python.simulate_class" />
+        <item index="2" class="java.lang.String" itemvalue="Python.node" />
       </list>
     </recent_temporary>
   </component>
@@ -350,36 +373,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AggregateKlines/node.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
+    <entry file="file://$PROJECT_DIR$/Optimal Classification Tree.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simulation/decisionTree.py">
+    <entry file="file://$PROJECT_DIR$/AggregateKlines/node.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="150" column="19" lean-forward="false" selection-start-line="150" selection-start-column="19" selection-end-line="150" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/simulation/main_simulation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simulation/decisionTree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-587">
+          <caret line="102" column="24" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/simulation/simulate_class.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="61" column="33" lean-forward="true" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
+        <state relative-caret-position="431">
+          <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -388,9 +418,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AggregateKlines/AggregateKlines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="84" lean-forward="false" selection-start-line="11" selection-start-column="84" selection-end-line="11" selection-end-column="84" />
-          <folding />
+        <state relative-caret-position="171">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AggregateKlines/similarity_pairs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
