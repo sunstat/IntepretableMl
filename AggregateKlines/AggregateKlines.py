@@ -13,7 +13,7 @@ class AggregateKlines(object):
         return clusters
 
     def _update_centroid(self, cluster):
-        self.cluster.update_centroid(np.mean(self.X(cluster.get_index()), axis=1))
+        self.cluster.update_centroid(np.mean(self.X(cluster.get_index()), axis=0))
 
     def _get_coef_helper(self, centroid, n_s):
         X, Y = self.sample_function(centroid, n_s)
