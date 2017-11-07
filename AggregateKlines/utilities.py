@@ -12,12 +12,12 @@ class utils(object):
     def sub_sampling(point, number_of_samples, decay, blackbox_model=None):
         # the prior distribution uses exponential
         # assume the point are scaled in
-        if point == None or len(point) < 1:
+        if not point or len(point) < 1:
             raise Exception('the subsampled point is empty')
-        if all( e > 1 and e < 0 for e in point):
+        if all([e > 1 and e < 0 for e in point]):
             raise Exception('the subsampled point is not within one and zero')
         point_dimension = len(point)
-        samples = np.zeros((number_of_samples,len(point)))
+        samples = np.zeros((number_of_samples, len(point)))
         for p in range(number_of_samples):
             within_range = False
             while not within_range:
@@ -29,7 +29,6 @@ class utils(object):
 
     @staticmethod
     def select_feature_LR_wrapper(N_para, x, y):
-
         # fit lr without any regularizer to get the coefficient
         # only deal with binary classification !!!
         general_simple = LogisticRegression()

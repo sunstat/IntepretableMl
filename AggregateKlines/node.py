@@ -1,18 +1,27 @@
 class Node(object):
 
-    def __init__(self, index, centroid = None, beta = None):
+    def __init__(self, index, centroid = None, coefs = None):
         self.index = index
-        self.beta = beta
+        self.coefs = coefs
         self.centroid = centroid
 
     def update_index(self, x):
         self.index = x
 
-    def set_centroid(self, centroid):
+    def update_centroid(self, centroid):
         self.centroid = centroid
 
-    def update_beta(self, beta):
-        self.beta = beta
+    def update_coefs(self, coefs):
+        self.coefs = coefs
+
+    def get_index(self):
+        return self.index
+
+    def get_centroid(self):
+        return self.centroid
+
+    def get_coefs(self):
+        return self.coefs
 
 if __name__ == "__main__":
 

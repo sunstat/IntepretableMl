@@ -47,15 +47,17 @@ class Simulator(object):
         with open(output_file, 'w') as f:  # Python 3: open(..., 'wb')
             pickle.dump([self.ls_split_feature, self.leaf_feature_ls, self.leaf_beta_ls, self.X, self.Y], f)
 
-    def get_simulated_data(self, output_file):
+    def get_simulated_data(self, output_file = None):
 
-        with open(output_file, 'w') as f:  # Python 3: open(..., 'wb')
-            pickle.dump([self.X, self.Y], f)
+        if not output_file:
+            with open(output_file, 'w') as f:  # Python 3: open(..., 'wb')
+                pickle.dump([self.X, self.Y], f)
 
         return self.X, self.Y
 
 
 if __name__ == "__main__":
+
     n_d = 2000
     n_f = 12
     ls_split_features = [[1],[2, -1],[-1, 4]]

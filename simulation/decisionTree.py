@@ -130,7 +130,6 @@ class DeterministicDecisonTree(object):
             print('')
             layer = next_layer
 
-
     def plot_leaf(self, leaf_ind):
         node = self.leafs[leaf_ind]
         def close_event():
