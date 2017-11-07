@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aaa544af-4bb2-4e61-95e6-5aff59155441" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/simulation/utils.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AggregateKlines/AggregateKlines.py" afterPath="$PROJECT_DIR$/AggregateKlines/AggregateKlines.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AggregateKlines/node.py" afterPath="$PROJECT_DIR$/AggregateKlines/node.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AggregateKlines/kMeansAggregate.py" afterPath="$PROJECT_DIR$/AggregateKlines/kMeansAggregate.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AggregateKlines/utilities.py" afterPath="$PROJECT_DIR$/AggregateKlines/utilities.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simulation/decisionTree.py" afterPath="$PROJECT_DIR$/simulation/decisionTree.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simulation/simulate_class.py" afterPath="$PROJECT_DIR$/simulation/simulate_class.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,8 +29,8 @@
       <file leaf-file-name="AggregateKlines.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AggregateKlines/AggregateKlines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+            <state relative-caret-position="167">
+              <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -43,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kMeansAggregate.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="kMeansAggregate.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AggregateKlines/kMeansAggregate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="45" column="8" lean-forward="false" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+            <state relative-caret-position="306">
+              <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -55,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="utilities.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="utilities.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AggregateKlines/utilities.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="952">
-              <caret line="56" column="46" lean-forward="false" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
+            <state relative-caret-position="521">
+              <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -142,6 +137,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>leaf_beta_ls</find>
+      <find>_update_centroid</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -163,9 +159,9 @@
         <option value="$PROJECT_DIR$/simulation/decisionTree.py" />
         <option value="$PROJECT_DIR$/AggregateKlines/node.py" />
         <option value="$PROJECT_DIR$/simulation/simulate_class.py" />
-        <option value="$PROJECT_DIR$/AggregateKlines/utilities.py" />
         <option value="$PROJECT_DIR$/AggregateKlines/AggregateKlines.py" />
         <option value="$PROJECT_DIR$/AggregateKlines/kMeansAggregate.py" />
+        <option value="$PROJECT_DIR$/AggregateKlines/utilities.py" />
       </list>
     </option>
   </component>
@@ -428,16 +424,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AggregateKlines/similarity_pairs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/simulation/main_simulation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -466,20 +452,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AggregateKlines/utilities.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="56" column="46" lean-forward="false" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Optimal Classification Tree.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
           <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AggregateKlines/AggregateKlines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -491,22 +477,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AggregateKlines/AggregateKlines.py">
+    <entry file="file://$PROJECT_DIR$/AggregateKlines/similarity_pairs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+        <state relative-caret-position="680">
+          <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="26" />
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AggregateKlines/kMeansAggregate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="45" column="8" lean-forward="false" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+        <state relative-caret-position="306">
+          <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AggregateKlines/utilities.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>

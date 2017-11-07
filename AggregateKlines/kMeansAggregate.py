@@ -43,7 +43,7 @@ class Kmeans(object):
 
 
     def KMneas_cluster(self):
-        
+
 
 
 

@@ -28,47 +28,19 @@ class utils(object):
         return samples
 
     @staticmethod
-    def select_feature_LR_wrapper(N_para, x, y):
-        # fit lr without any regularizer to get the coefficient
-        # only deal with binary classification !!!
-        general_simple = LogisticRegression()
-        general_simple.fit(x, y)
-        # print('not_sparse_model',general_simple.score(x,y))
-        original_model_paras = general_simple.coef_
+    def select_feature_LR_wrapper(n_para, x, y, model_type):
 
-        LR = LogisticRegression()
-        number_of_class = len(original_model_paras)
-        original_para_size = len(original_model_paras[0])
-        list_of_select_features = []
-        model_select_para = []
-        model_select_intercept = []
-        for model_para in original_model_paras:
-            index = np.argsort(abs(model_para))[::-1]
-            list_of_select_features.append(index[:N_para])
-        # now refit the model with selected feature
-        # assume the class is labeled as 0,1,2, ...
-        for i in range(number_of_class):
-            # transfer the original data into one-vs-rest
-            y_i = [1 if y_j == i else 0 for y_j in y]
-            x_i = x[:, list_of_select_features[i]]
-            LR.fit(x_i, y_i)
-            # print(LR.decision_function(x_i[0]))
-            para = np.zeros(original_para_size)
-            para[list_of_select_features[i]] = LR.coef_[0]
-            model_select_para.append(para)
-            model_select_intercept.append(LR.intercept_[0])
-        LR_re = LogisticRegression()
-        LR_re.coef_ = np.array(model_select_para)
-        LR_re.intercept_ = np.array(model_select_intercept)
-        LR_re.classes_ = LR.classes_
-        # print('new_model',LR_re.score(x,y_i))
-        return np.concatenate((LR_re.coef_[0], LR_re.intercept_)), 1 - LR_re.score(x, y_i)
-            # def rescale_to_one_zero(ret):
-    #     def rescale(vector):
-    #         max = np.max(vector)
-    #         min = np.min(vector)
-    #         return (vector-min)/(max-min)
-    #     return  np.apply_along_axis(rescale,0, ret)
+        if model_type == 'n':
+            general_simple = LogisticRegression()
+            general_simple.fit(x, y)
+            original_model_paras = general_simple.coef_[0]
+            index = np.argsort(abs(original_model_paras))[::-1]
+            list_of_select_features = index[:n_para]
+            new_x = x[:,list_of_select_features]
+            LR_refit = LogisticRegression()
+            LR_refit.fit(new_x, y)
+            return np.concatenate((LR_refit.coef_[0], LR_refit.intercept_)), 1 - LR_refit.score(new_x, y)
+
 
 if __name__ == "__main__":
 
